@@ -4,28 +4,28 @@
 "markdown_extensions":
   - "pymdownx.highlight"
   - "pymdownx.superfences"
+  - "mdx_truly_sane_lists":
+      "nested_indent": 2
+      "truly_sane": true
 "plugins":
   - "search":
-      "indexing": "titles"
-      "min_search_length": 2
-      "prebuild_index": true
       "separator": "[\\s\\-\\.]+"
   - "minify":
       "minify_html": true
   - "exclude-search":
       "exclude":
+        - "1.29/*"
+        - "1.28/*"
+        - "1.27/*"
         - "1.26/*"
-        - "1.25/*"
-        - "1.24/*"
-        - "1.23/*"
-        - "1.22/*"
-        - "1.21/*"
-        - "1.20/*"
 "repo_name": "jsonnet-libs/k8s-libsonnet"
 "repo_url": "https://github.com/jsonnet-libs/k8s-libsonnet"
 "site_name": "k8s jsonnet library"
 "site_url": "https://jsonnet-libs.github.io/k8s-libsonnet"
 "theme":
+  "features":
+    - "navigation.tabs"
+    - "navigation.indexes"
   "name": "material"
   "palette":
     - "accent": "indigo"
